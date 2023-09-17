@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"  />
+</head>
+<body>
+<div id="header"  class="slide-from-top " >
+    <div class="container">
+        <nav>
+            <img src="images/SMISAIM..png" class="logo" alt="">
+            <ul id="sidemenu">
+                
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-lightbulb" id="lightbulb"></i>
+                <div id="success-message" class="success-message">Successfully changed the background</div>
+
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" id="menu" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p contenteditable="true">Web Dev, product Designer & App Dev</p>
+            <h1>Hey, I'm <span>Sa'im</span><br>Misbahu From Nigeria</h1>
+        </div>
+    </div>
+</div>
+
+<!-- about me section -->
+<div id="about" class="slide-from-top " >
+    <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+                <img src="images/photo_2023-09-16_23-17-57.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1>
+               <p>
+                Hello! I'm Sa'im Misbahu,
+                 and I'm thrilled to welcome you to my world.
+                  At just 14 years old, my life is a canvas of
+                 dreams and aspirations, and I'm on a passionate journey 
+                 towards fulfilling them all. Allow me to give you a glimpse 
+                 into who I am and what makes me tick.
+                 Ever since I can remember, I've been captivated by the digital
+                  realm. My fascination with technology, combined with a love for problem-solving, led me to become a web developer. 
+               </p>
+               <div class="tab-tittles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links"  onclick="opentab('education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    <li><span>Web Development</span><br>Web app Development</li>
+                    <li><span>App Development</span><br>Building Android/ios apps</li>
+                </ul>
+               </div>
+
+               <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2023 - current</span><br>UI/UX designer at Sameeha Kitchen
+                   </li>
+                    <li><span>2022 - 2023</span><br>Web developer at Sajm plastics
+                   </li>
+                    <li><span>2021-2022</span><br>Blockchain developer at Exchange Expert</li>
+                </ul>
+               </div>
+
+               <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2023 - current</span><br>UI/UX Design and Web Development courses
+                    at Bitkova Academy</li>
+                    <li><span>2022-2023</span><br>Blockchain Development Training at Dominieum
+                    Academy</li>
+                    <li><span>2022 - 2023</span><br>Mobile Development course at Coursera</li>
+                </ul>
+               </div>
+
+            </div>
+         </div>
+    </div>
+</div>
+
+<!-- Services -->
+
+<div id="services" class="slide-from-top">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>
+                Our expertise in web design spans across
+                 a range of industries, and we pride ourselves on 
+                 staying at the forefront of design trends and technologies.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>
+                    Let us transform your digital presence with UI/UX design 
+                    that not only meets industry best practices but sets new standards.
+                    Experience the difference of exceptional UI/UX design with [Smi].
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>
+                    We understand that in today's digital world, your app's design plays 
+                    a crucial role in attracting and retaining users. That's why we're committed
+                     to turning your app concept into a visual masterpiece that users will love.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- portfolio -->
+<div id="portfolio" class="slide-from-top">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+         <div class="work-list">
+            <div class="work">
+                <img src="images/FIrst wallet app.png" alt="project">
+                <div class="layer">
+                    <h3>Crypto Wallet App</h3>
+                    <p>The app allows you to carry out cryptocurrency transactions at a low cost.
+                        <br>Download Now.
+                    </p>
+                    <a href="#"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/home page.png" alt="project">
+                <div class="layer">
+                    <h3>Flight Booking App</h3>
+                    <p>This app allows you to book your flights from home. 
+                        <br>Download Now. </p>
+                    <a href="#"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/13 Pro - 1.png" alt="project">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>This app allows you to communicate with people around the globe. 
+                       <br>Download Now. </p>
+                    <a href="#"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+         </div>
+         <a href="#" class="btn btn-see-more">See more</a>
+    </div>
+</div>
+
+<!-- contact -->
+<div id="contact" class="slide-from-top">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> saimmukhtar2009@gmail.com</p>
+                <p><i class="fas fa-square-phone"></i> +2349061301829</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Saim Misbahu"><i class="fab fa-facebook"></i></a>
+                    <a href="http://twitter.com/smisaim"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/smisaim"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/misbahu-sa-im-093802282"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/smisaim"><i class="fab fa-github"></i></a>
+                    
+                </div>
+                <a href="images/UXDESI~1.PDF" download="Your_CV.pdf" class="btn btn2">Download My CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©2023 by saim ||All rights reserved</p>
+        <i class="fa-arrow fa-solid fa-arrow-up" id="back-to-top"></i>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.querySelectorAll(".tab-links");
+    var tabcontents = document.querySelectorAll(".tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyJdORL0XoDGEYGS4uPotxTXc8Pxq97EnVRKATSC7Uvz6CVVQU8PaxIw02RZG4jJByn/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully to Sa'im!";
+            setTimeout(function() {
+                msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+</script>
+]
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+     ScrollReveal({
+        reset: true,
+        distance: '80px',
+        duration: 2000,
+        delay:200
+     });
+     ScrollReveal().reveal('.header-text, .sub-title', { origin: 'top' });
+     ScrollReveal().reveal('.services-list, .work, .contact-right, .contact-left', { origin: 'bottom' });
+    ScrollReveal().reveal('.about-col-1, h1', { origin: 'left' });
+    ScrollReveal().reveal('.about-col-2 p, .work p ,h1', { origin: 'right' });
+</script>
+<script>
+    // Get the button element
+    const backButton = document.getElementById('back-to-top');
+    const headerSection = document.getElementById('header');
+
+    // Add a click event listener to the button
+    backButton.addEventListener('click', () => {
+        headerSection.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+<script>
+    // Get the button and success message elements
+    const toggleButton = document.getElementById('lightbulb');
+    const successMessage = document.getElementById('success-message');
+
+    // Add a click event listener to the button
+    toggleButton.addEventListener('click', () => {
+       
+        document.body.classList.toggle('light-theme');  
+        successMessage.style.display = 'block';     
+        setTimeout(() => {
+            successMessage.style.display = 'none';
+        }, 1500); 
+    });
+</script>
+
+
+
+
+
+</body>
+</html>
